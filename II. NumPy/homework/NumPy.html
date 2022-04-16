@@ -1,0 +1,18 @@
+﻿<h1>Homework 2</h1>
+<h2>Chessboard</h2>
+<p>Write a function that create a square 2D chessboard (i.e. ones and zeros alternately) for given <code>size</code> as an argument.</p>
+<h2>Hidden Markov Model</h2>
+<p>Load a matrix saved in <code>markov.txt</code> using <a href="https://numpy.org/doc/stable/reference/generated/numpy.loadtxt.html">numpy.loadtxt</a>. It is a <a href="https://en.wikipedia.org/wiki/Stochastic_matrix">transition matrix</a>
+for some Markov chain describing migration between 10 states. Multiplying a transition matrix <img src="https://i.upmath.me/svg/n" alt="n" /> times gives you a transition matrix for nth period (i.e. probabilities that
+one state fall into another). Write a function that returns mean probability of falling into the last state after given period <code>n</code> (i.e. mean value of last column after nth period).</p>
+<h2>Multivariate Linear Regression</h2>
+<p>Given <a href="https://en.wikipedia.org/wiki/Linear_regression">linear regression</a> model <img src="https://i.upmath.me/svg/y%3DX%5Cbeta%2B%5Cepsilon" alt="y=X\beta+\epsilon" /> where <img src="https://i.upmath.me/svg/X" alt="X" /> is a matrix of <img src="https://i.upmath.me/svg/n" alt="n" /> observations and <img src="https://i.upmath.me/svg/p" alt="p" /> variables (i.e. of size <img src="https://i.upmath.me/svg/n%20times%20p" alt="n times p" />),
+$\beta$ is a vector of parameters of size <img src="https://i.upmath.me/svg/p" alt="p" /> (number of variables) and <img src="https://i.upmath.me/svg/y" alt="y" /> is a vector of <img src="https://i.upmath.me/svg/n" alt="n" /> outputs, the solution according to least square error is given by <img src="https://i.upmath.me/svg/%5Cwidehat%7B%5Cbeta%7D%3D(X%5ETX)%5E%7B-1%7DX%5ETy." alt="\widehat{\beta}=(X^TX)^{-1}X^Ty." />
+Generate variables and outputs (for example for some vector <img src="https://i.upmath.me/svg/x" alt="x" /> it could be <img src="https://i.upmath.me/svg/y%3D2%5C%2Cx%2B%5Cfrac%7B1%7D%7B2%7Dx%5E2%2B%5Cfrac%7B1%7D%7B3%7Dx%5E3%2B%5Cepsilon" alt="y=2\,x+\frac{1}{2}x^2+\frac{1}{3}x^3+\epsilon" />
+where <img src="https://i.upmath.me/svg/%5Cepsilon" alt="\epsilon" /> is a random variable from <a href="https://en.wikipedia.org/wiki/Normal_distribution">normal distribution</a>).
+Write a function that returns vector <img src="https://i.upmath.me/svg/%5Cwidehat%7B%5Cbeta%7D" alt="\widehat{\beta}" /> and fit the model (estimate these parameters) to generated the data.</p>
+<h2>Brownian Paths</h2>
+<p>One dimensional <a href="https://en.wikipedia.org/wiki/Brownian_motion">brownian motion</a> can be simulated iteratively as <img src="https://i.upmath.me/svg/x_%7Bn%2B1%7D%3Dx_n%2B%5Cepsilon" alt="x_{n+1}=x_n+\epsilon" /> where <img src="https://i.upmath.me/svg/%5Cepsilon" alt="\epsilon" /> is a random variable
+generated from standard <a href="https://en.wikipedia.org/wiki/Normal_distribution">normal distribution</a>. Write a function that given vector of initial conditions
+<img src="https://i.upmath.me/svg/X_0%3D(x_%7B01%7D%2Cx_%7B02%7D%2C%5Cldots%2Cx_%7B0n%7D)" alt="X_0=(x_{01},x_{02},\ldots,x_{0n})" /> generates a matrix of simulated brownian paths with <img src="https://i.upmath.me/svg/m" alt="m" /> steps.</p>
+<p>Good luck, don’t hesitate to ask for help if needed!</p>
